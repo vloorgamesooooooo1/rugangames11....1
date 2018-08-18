@@ -25,10 +25,10 @@ client.on('ready', () => {
     client.user.setStatus("idle")
 });
 client.on('ready', () => {
-     client.user.setActivity("Type -play",{type: 'WATCHING'});
+     client.user.setActivity("Type uplay",{type: 'WATCHING'});
 
 });
-const prefix = "-"
+const prefix = "u"
 client.on('message', async msg => {
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
