@@ -477,12 +477,12 @@ client.on('message', message => {
 if (message.content.startsWith(PREFIX + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/darkknite55");
 	 console.log('test' + argresult);
-    message.channel.sendMessage(`Streaming: **${argresult}`)
+    message.channel.sendMessage(`** تم تغيير حآلة البوت بنجآح ** **${argresult}`)
 }
 
 if (message.content.startsWith(PREFIX + 'setname')) {
   client.user.setUsername(argresult).then
-	  message.channel.sendMessage(`تم تغيير آسم البوت بنجآح **${argresult}**`)
+	  message.channel.sendMessage(` ** تم تغيير آسم البوت بنجآح ** **${argresult}**`)
   return message.reply("** لا يمكنك تغيير تغيير آسم البوت الآن آلا بعد سآعتين **");
 }
 if (message.content.startsWith(PREFIX + 'setavatar')) {
